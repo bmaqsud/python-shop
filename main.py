@@ -2,6 +2,9 @@ from product import show_product_list
 from cart import (
     add_cart,
     show_cart,
+    remove_product,
+    show_check
+
 )
 
 
@@ -42,10 +45,10 @@ def main():
         elif choice == "3":
             show_cart(cart, products)
         elif choice == "4":
-            pass
+            remove_product(cart, products)
         elif choice == "5":
-            pass
+            show_check(cart, products)
         else:
-            pass
+            print("xato menu!")
 
 main()
